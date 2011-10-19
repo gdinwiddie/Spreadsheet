@@ -8,7 +8,8 @@ When /^I open the file$/ do
   @spreadsheet= Roo::Spreadsheet.open @spreadsheet_file.path
 end
 
-Given /^the spreadsheet gem fixes the "([^"]*)" error$/ do |arg1|
+Given /^we can process \.xlsx files$/ do
+  pending # roo gives "Bad file descriptor - Bad file descriptor (Errno::EBADF)"
 end
 
 Then /^cell "([^"]*)" contains "([^"]*)"$/ do |cell_location, expected_contents|

@@ -2,7 +2,7 @@ Feature: read various spreadsheets
 
 Scenario: Mac Excel 2011 native format
   Given the file "data/excel_Mac2011.xlsx"
-  And the spreadsheet gem fixes the "OLE2 signature is invalid (Ole::Storage::FormatError)" error
+  And we can process .xlsx files
   When I open the file
   Then cell "A1" contains "hot"
 
@@ -13,6 +13,6 @@ Scenario: Mac Excel 2011 saving in old format
 
 Scenario: Windows Excel 2007 native format
   Given the file "data/excel_Win2007.xlsx"
-  And the spreadsheet gem fixes the "OLE2 signature is invalid (Ole::Storage::FormatError)" error
+  And we can process .xlsx files
   When I open the file
   Then cell "A1" contains "Some text here…"
