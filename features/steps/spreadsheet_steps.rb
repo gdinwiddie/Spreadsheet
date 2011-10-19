@@ -17,3 +17,7 @@ Then /^cell "([^"]*)" contains (\d+\.\d+)$/ do |cell_location, expected_value|
   cell_row, cell_column = name_to_coordinates(cell_location)
   @spreadsheet.worksheet(0).cell(cell_row, cell_column).value.should eql expected_value.to_f
 end
+
+Given /^the spreadsheet gem fixes the "([^"]*)" error$/ do |arg1|
+  #pending # express the regexp above with the code you wish you had
+end
