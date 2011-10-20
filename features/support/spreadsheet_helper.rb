@@ -1,5 +1,3 @@
-require 'spreadsheet'
-
 $COLUMN_NAMES= ('A'..'Z').to_a + ('AA'..'ZZ').to_a
 
 def name_to_coordinates(cell_location)
