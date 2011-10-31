@@ -5,7 +5,7 @@ Given /^the file "([^"]*)"$/ do |filename|
 end
 
 Given /^we can process \.xlsx files$/ do
-  pending # spreadsheet gem gives "OLE2 signature is invalid (Ole::Storage::FormatError)"
+  pending('spreadsheet gem gives "OLE2 signature is invalid (Ole::Storage::FormatError)"')
 end
 
 When /^I open the file$/ do
