@@ -1,6 +1,6 @@
 $COLUMN_NAMES= ('A'..'Z').to_a + ('AA'..'ZZ').to_a + ('AAA'..'ZZZ').to_a
 
-def base26(decimal)
+def base26(decimal) # 0-based
   return $COLUMN_NAMES[decimal]
 end
 
