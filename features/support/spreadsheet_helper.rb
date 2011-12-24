@@ -1,4 +1,8 @@
-$COLUMN_NAMES= ('A'..'Z').to_a + ('AA'..'ZZ').to_a
+$COLUMN_NAMES= ('A'..'Z').to_a + ('AA'..'ZZ').to_a + ('AAA'..'ZZZ').to_a
+
+def base26(decimal)
+  return $COLUMN_NAMES[decimal]
+end
 
 def name_to_coordinates(cell_location)
   /([A-Za-z]+)([0-9]+)/.match(cell_location)
